@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture 태그</title>
+</head>
+<body>
+    <picture>
+        <source srcset="./src/rosy-icon.png" media="(min-width: 600px)" />
+        <source srcset="./src/icon-lock.png" media="(min-width: 400px)" />
+        <img src="./src/icon-lock.png" alt="아이콘" />
+    </picture>
+    <h1>숫자 더하기</h1>
+<form oninput="result.value=parseInt(a.value) + parseInt(b.value)">
+  <label for="a">숫자 1</label>
+  <input type="number" id="a" name="a" value="0" />
+  <br /><br />
+  <label for="b">숫자 2</label>
+  <input type="number" id="b" name="b" value="0" />
+  <br /><br />
+  <label for="result">합계</label>
+  <output id="result">0</output>
+</form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formexam</title>
+</head>
+<body>
+    <label for="id">아이디:</label>
+    <input type="text" id="id" name="id" />
+    <br />
+    <label for="pw">비밀번호:</label>
+    <input type="password" id="pw" name="pw" placeholder="특수문자 포함 필수" /> 
+    <br />
+    <label for="date">생일</label>
+    <input type="date" id="date" name="date" />
+    <br />
+    <select name="options" required>
+        <option value="1">SKT</option>
+        <option value="2">KT</option>
+        <option value="3">LG</option>
+      </select>
+    <label for="tel">연락처</label>
+    <input type="tel" id="tel" name="tel" />
+    <br />
+    <legend>성별</legend>
+    <input type="radio" name="gender" id="male" value="male" />
+    <label for="male">남성</label>
+    <input type="radio" name="gender" id="female" value="female" />
+    <label for="female">여성</label>
+    <br />
+    <legend>사용 기술</legend>
+    <input type="checkbox" in="html" name="language" />
+    <label for="html">HTML</label>  
+    <input type="checkbox" id="css" name="language"
+    value="css" />
+    <label for="css">CSS</label>
+    <input type="checkbox" id="Javascript" name="language"
+    value="Javascript" />
+    <label for="Javascript">Javascript</label>
+    <input type="checkbox" name="language" id="python" value="python" />
+    <label for="python">Python</label>
+    <input type="checkbox" name="language" id="Django" value="Django" />
+    <label for="city">사용하는 브라우저를 선택하세요</label>
+    <input list="websites" id="websites" name="websites" />
+    <datalist id="websites">
+    <option value="">구글</option>
+    <option value="">야후</option>
+    <option value="">다음</option>
+    <option value="">네이버></option>
+    </datalist>
+    </form>
+</body>
+</html>
